@@ -150,10 +150,44 @@ We further conduct in-depth analyses on retriever architectures, corpus selectio
 <!-- End paper abstract -->
 
 <!-- Result Table -->
-<table>
-  <caption style="caption-side: top; font-weight: bold; text-align: left;">
-    Experimental Results
-  </caption>
+<style>
+  .styled-table {
+    border-collapse: collapse;
+    margin: 1.5em 0;
+    font-size: 0.95em;
+    font-family: sans-serif;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    width: 100%;
+  }
+  .styled-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+  }
+  .styled-table th,
+  .styled-table td {
+    padding: 0.75em 1em;
+  }
+  .styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+  }
+  .styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+  }
+  .styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+  }
+  .styled-table caption {
+    caption-side: top;
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-bottom: 0.5em;
+    text-align: left;
+  }
+</style>
+
+<table class="styled-table">
+  <caption>Experimental Results</caption>
   <thead>
     <tr>
       <th>LLM</th>
@@ -304,6 +338,7 @@ We further conduct in-depth analyses on retriever architectures, corpus selectio
     </tr>
   </tbody>
 </table>
+
 <!--End Result Table -->
 
 
