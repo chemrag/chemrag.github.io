@@ -149,6 +149,164 @@ We further conduct in-depth analyses on retriever architectures, corpus selectio
 </section>
 <!-- End paper abstract -->
 
+<!-- Result Table -->
+<table>
+  <caption style="caption-side: top; font-weight: bold; text-align: left;">
+    Experimental Results
+  </caption>
+  <thead>
+    <tr>
+      <th>LLM</th>
+      <th>Method</th>
+      <th>MMLU</th>
+      <th>SciBench</th>
+      <th>ChemBench4K</th>
+      <th>Mol‑Instruct.</th>
+      <th>Avg.</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">Llama3.1 (8b)</td>
+      <td>Baseline</td>
+      <td>42.90</td>
+      <td>3.30</td>
+      <td>27.25</td>
+      <td>23.99</td>
+      <td>24.36</td>
+    </tr>
+    <tr>
+      <td>Ours</td>
+      <td>52.15</td>
+      <td>3.56</td>
+      <td>25.88</td>
+      <td>41.05</td>
+      <td>30.66</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Llama3.1 (70b)</td>
+      <td>Baseline</td>
+      <td>62.38</td>
+      <td>5.99</td>
+      <td>24.25</td>
+      <td>28.33</td>
+      <td>30.24</td>
+    </tr>
+    <tr>
+      <td>Ours</td>
+      <td>61.05</td>
+      <td>13.63</td>
+      <td>26.25</td>
+      <td>49.67</td>
+      <td>37.65</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Mistral (7b)</td>
+      <td>Baseline</td>
+      <td>45.21</td>
+      <td>2.09</td>
+      <td>12.63</td>
+      <td>4.66</td>
+      <td>16.15</td>
+    </tr>
+    <tr>
+      <td>Ours</td>
+      <td>42.57</td>
+      <td>0</td>
+      <td>11.13</td>
+      <td>34.73</td>
+      <td>22.11</td>
+    </tr>
+    <tr>
+      <td rowspan="2">ChemLLM (7b)</td>
+      <td>Baseline</td>
+      <td>37.62</td>
+      <td>8.72</td>
+      <td>23.50</td>
+      <td>17.74</td>
+      <td>21.90</td>
+    </tr>
+    <tr>
+      <td>Ours</td>
+      <td>43.23</td>
+      <td>2.03</td>
+      <td>16.75</td>
+      <td>14.56</td>
+      <td>19.14</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Deepseek‑r1‑llama (8b)</td>
+      <td>Baseline</td>
+      <td>55.44</td>
+      <td>3.09</td>
+      <td>35.38</td>
+      <td>3.75</td>
+      <td>24.42</td>
+    </tr>
+    <tr>
+      <td>Ours</td>
+      <td>57.43</td>
+      <td>3.87</td>
+      <td>29.13</td>
+      <td>7.82</td>
+      <td>24.56</td>
+    </tr>
+    <tr>
+      <td rowspan="2">GPT‑3.5</td>
+      <td>Baseline</td>
+      <td>49.17</td>
+      <td>9.66</td>
+      <td>30.50</td>
+      <td>29.00</td>
+      <td>29.58</td>
+    </tr>
+    <tr>
+      <td>Ours</td>
+      <td>52.81</td>
+      <td>8.80</td>
+      <td>44.50</td>
+      <td>45.83</td>
+      <td>37.99</td>
+    </tr>
+    <tr>
+      <td rowspan="2">GPT‑4o</td>
+      <td>Baseline</td>
+      <td>74.59</td>
+      <td>4.97</td>
+      <td>59.50</td>
+      <td>28.79</td>
+      <td>41.96</td>
+    </tr>
+    <tr>
+      <td>Ours</td>
+      <td>73.92</td>
+      <td>8.59</td>
+      <td>67.25</td>
+      <td>53.18</td>
+      <td>50.74</td>
+    </tr>
+    <tr>
+      <td rowspan="2">o1</td>
+      <td>Baseline</td>
+      <td>85.81</td>
+      <td>40.82</td>
+      <td>41.63</td>
+      <td>31.55</td>
+      <td>49.95</td>
+    </tr>
+    <tr>
+      <td>Ours</td>
+      <td>85.48</td>
+      <td>43.61</td>
+      <td>58.38</td>
+      <td>45.04</td>
+      <td>58.13</td>
+    </tr>
+  </tbody>
+</table>
+<!--End Result Table -->
+
+
 <!--BibTex citation -->
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
